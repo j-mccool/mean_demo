@@ -4,9 +4,11 @@ import { Component } from '@angular/core';
   selector: 'app-post-create',
   templateUrl: './post-create.component.html'
 })
-
 export class PostCreateComponent {
+  enteredValue = '';
+  newPost = 'NO CONTENT';
+
   onAddPost() {
-    alert('Post added!');
+    this.newPost = this.enteredValue;
   }
 }
